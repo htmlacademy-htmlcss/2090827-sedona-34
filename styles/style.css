@@ -79,6 +79,7 @@ img {
   color: inherit;
   text-transform: capitalize;
   width: 65px;
+
 }
 
 .navigation-item {
@@ -114,12 +115,20 @@ img {
   margin: 0 auto;
 }
 
+.logo-diveder {
+  margin-top: -57px;
+  z-index: 2;
+
+}
+
 .about-intro {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+  padding-top: 63px;
+  margin: 0;
 }
 
 .about-compare {
@@ -127,6 +136,9 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  padding-top: 31px;
+  padding-bottom: 90px;
+  margin: 0;
 }
 
 .advantages-list {
@@ -140,7 +152,7 @@ img {
   flex-wrap: wrap;
 }
 
-.advantages-item {
+.advantages-item:nth-child(3) {
   height: 383px;
 }
 
@@ -467,10 +479,8 @@ img {
   height: 55px;
   margin: 4px;
   background: #82B3D3;
-  border: 1px solid #82B3D3;
   border-radius: 4px;
   line-height: 55px;
-
 }
 
 .paggination-link {
@@ -561,6 +571,7 @@ img {
   color:#000000;
   width: 55px;
   height: 55px;
+  border-radius: 4px;
 }
 
 .visually-hidden {
