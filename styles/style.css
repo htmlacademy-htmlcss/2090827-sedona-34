@@ -105,6 +105,7 @@ img {
   padding: 8px 15px;
   border-radius: 4px;
   background-color: #756157;
+  border: none;
 }
 
 .page-container {
@@ -225,6 +226,7 @@ img {
 .subscribe {
   width: 1200px;
   height: 411px;
+  padding: 94px 0;
 }
 
 .subscribe-title {
@@ -248,9 +250,17 @@ img {
   justify-content: center;
 }
 
+.subscribe-form input[type=email] {
+  padding: 20px 491px 20px 22px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .subscribe .button {
   font-size: 20px;
   line-height: 36px;
+  padding: 12px 15px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .footer-container {
