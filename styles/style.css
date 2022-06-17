@@ -525,10 +525,10 @@ p {
 
 .hotels-card-prop {
   display: grid;
-  grid-row: repeat(3, 1fr);
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 15px;
+  margin-top: 13px;
 }
 
 .divider-pag {
