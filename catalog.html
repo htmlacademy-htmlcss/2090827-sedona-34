@@ -111,15 +111,17 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a class="button selected" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать с описанием</span>
-          </a>
-          <a class="button" href="#">
+          <div class="button-view">
+            <a class="button selected" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button" href="#">
+              <span class="visually-hidden">Показать с описанием</span>
+            </a>
+            <a class="button" href="#">
             <span class="visually-hidden">Показать список</span>
-          </a>
+            </a>
+          </div>
         </div>
         <ol class="hotels-list">
           <li class="hotels-card">
@@ -175,7 +177,6 @@
             <p class="button rat">Рейтинг: 5,0</p>
           </li>
         </ol>
-        <div class="divider-pag"></div>
         <div class="pag-wrapper">
           <ul class="paggination">
             <li class="paggination-item active">
@@ -200,9 +201,9 @@
           <div class="hotels-quantity">
             <label for="hotels-quantity-options">Гостиниц на странице:</label>
             <select id="hotels-quantity-options" class="hotels-select">
-              <option value="1">1</option>
-              <option value="4">4</option>
-              <option value="8">8</option>
+              <option value="1">4</option>
+              <option value="4">10</option>
+              <option value="8">20</option>
             </select>
           </div>
         </div>
