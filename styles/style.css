@@ -17,7 +17,9 @@
 
 /*Pages*/
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -53,18 +55,18 @@ h2 {
 }
 
 h3 {
-  margin:0;
+  margin: 0;
 }
 
 p {
-  margin:0;
+  margin: 0;
 }
 
 .main-container {
   flex-grow: 1;
 }
 
-.navigation{
+.navigation {
   display: flex;
   height: 65px;
   padding: 0 70px;
@@ -101,7 +103,7 @@ p {
   padding-bottom: 3px;
 }
 
-.navigation-user  .button{
+.navigation-user .button {
   padding: 9px 35px;
 }
 
@@ -111,15 +113,17 @@ p {
 
 .button {
   font-family: "PT sans", sans-serif;
-  color:#FFFFFF;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 15px;
   border-radius: 4px;
   background-color: #756157;
   border: none;
+  text-align: center;
 }
 
 .page-container {
@@ -155,7 +159,7 @@ p {
 
 .advantages-list {
   text-align: center;
-  list-style:none;
+  list-style: none;
   outline: #7DB54F;
   margin: 0;
   padding: 0;
@@ -220,8 +224,8 @@ p {
 }
 
 .exten-list .advantages-item {
-  width:400px;
-  height:384px;
+  width: 400px;
+  height: 384px;
   padding: 80px 85px;
 }
 
@@ -240,7 +244,7 @@ p {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin:0;
+  margin: 0;
 }
 
 .interested-description {
@@ -263,7 +267,7 @@ p {
 .subscribe {
   width: 1200px;
   height: 411px;
-  padding: 94px 0;
+  padding-top: 87px;
 }
 
 .subscribe-title {
@@ -294,7 +298,7 @@ p {
   font-size: 18px;
   line-height: 21px;
   border-radius: 10px 0px 0px 10px;
-  width:600px;
+  width: 600px;
   padding: 20px 0 19px 22px;
   font-family: 'PT Sans';
 }
@@ -323,7 +327,7 @@ p {
   display: flex;
   align-items: center;
   padding: 0;
-  margin:0;
+  margin: 0;
   justify-content: space-between;
 }
 
@@ -342,13 +346,13 @@ p {
   line-height: 40px;
 }
 
-.inner-main{
+.inner-main {
   margin: 0 auto;
 }
 
-.filter-bg{
+.filter-bg {
   background-image: url("../img/filter-bg.jpg");
-    background-size: 100% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   height: 393px;
   color: #FFFFFF;
@@ -399,7 +403,7 @@ p {
 
 .hotels-filter {
   display: flex;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
 .hotels-filter-group {
@@ -415,7 +419,7 @@ p {
 }
 
 .hotels-filter-group input[type="radio"] {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .hotels-filter-group input[type="checkbox"] {
@@ -498,22 +502,33 @@ p {
 }
 
 .hotels-card {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
-  width: 340px;
-  height: 438px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  max-width: 340px;
+  white-space: wrap;
 }
 
-.hotels-card-link {
+.hotels-card-title {
+  margin-top: 15px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+}
+
+.hotels-card-link {
   text-decoration: none;
   color: #000000;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.hotels-card-prop {
+  display: grid;
+  grid-row: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
 }
 
 .divider-pag {
@@ -553,18 +568,19 @@ p {
 .paggination-link {
   color: #FFFFFF;
   text-decoration: none;
-  margin:auto;
+  margin: auto;
   display: block;
   width: 60px;
   height: 60px;
   text-align: center;
 }
 
-.hotels-quantity, .hotels-select option {
+.hotels-quantity,
+.hotels-select option {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 .hotels-quantity label {
@@ -587,11 +603,11 @@ p {
 }
 
 .brown {
-  background-color:#756157 ;
+  background-color: #756157;
 }
 
 .blue {
-  background-color:#82B3D3;
+  background-color: #82B3D3;
 }
 
 .green {
@@ -600,7 +616,7 @@ p {
 
 .empty {
   border: none;
-  background-color:transparent;
+  background-color: transparent;
 }
 
 .fav {
@@ -612,21 +628,19 @@ p {
 .rat {
   color: #333333;
   background-color: #F2F2F2;
-  width: 160px;
-  margin: 0;
-  margin-top: 15px;
 }
 
 .sub-bg {
   background-image: url("../img/subscribe-bg.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   color: #FFFFFF;
-  
+  background-color: black;
+  padding: 95px 0;
 }
 
 .light {
-  color:#FFFFFF;
+  color: #FFFFFF;
   background-color: #82B3D3;
 
 }
@@ -641,7 +655,7 @@ p {
 
 .active {
   background: #F2F2F2;
-  color:#000000;
+  color: #000000;
   border-radius: 4px;
 }
 
