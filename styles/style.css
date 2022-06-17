@@ -71,9 +71,9 @@ p {
 
 .navigation-list {
   padding: 0;
-  width: 500px;
-  margin: auto 0;
-  padding-left: 47px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-user {
@@ -89,14 +89,11 @@ p {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
-  text-transform: capitalize;
-  width: 65px;
+  padding: 20px 17px;
 }
 
 .navigation-item {
   list-style: none;
-  display: inline;
-  margin-right: 29px;
 }
 
 .navigation-user .navigation-item {
@@ -108,10 +105,11 @@ p {
 }
 
 .navigation-logo {
-  z-index: 5;
+  z-index: 1;
 }
 
 .button {
+  font-family: "PT sans", sans-serif;
   color:#FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
@@ -141,7 +139,6 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-/*   padding-top: 54px; */
   margin: 0;
 }
 
@@ -181,18 +178,19 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin-bottom: 30px;
 }
 
 .advantages-number {
   font-size: 18px;
   line-height: 21px;
-  padding: 30px 0;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-top: 30px;
 }
 
 
@@ -218,7 +216,6 @@ p {
 
 .exten-list {
   display: flex;
-  width:1200px;
 }
 
 .exten-list .advantages-item {
@@ -227,10 +224,14 @@ p {
   padding: 80px 85px;
 }
 
+.exten-picture {
+  margin-bottom: 27px;
+}
+
 .interested {
   text-align: center;
-  padding-top: 93px;
-  padding-bottom: 93px;
+  margin-top: 91px;
+  margin-bottom: 93px;
 }
 
 .interested-title {
@@ -242,19 +243,20 @@ p {
 }
 
 .interested-description {
-  font-size: 22px;
-  line-height: 26px;
   color: #333333;
-  padding-top: 29px;
-  padding-bottom: 56px;
-  margin:0;
+  margin-top: 29px;
+  margin-bottom: 56px;
 }
 
 .interested .button {
+  width: 574px;
   font-size: 20px;
-  line-height: 36px;
-  margin-bottom: 93px;
-
+  line-height: 60px;
+  height: 60px;
+  display: block;
+  padding: 0;
+  font-weight: 700;
+  margin: 0 auto;
 }
 
 .subscribe {
@@ -275,6 +277,7 @@ p {
 
 .subscribe-description {
   text-align: center;
+  margin-top: 27px;
 }
 
 .subscribe-form {
@@ -282,45 +285,53 @@ p {
   border-radius: 0px 10px 10px 0px;
   display: flex;
   justify-content: center;
-  padding-top: 46px;
-}
-
-.subscribe-form input[type=email] {
-  padding: 20px 491px 20px 22px;
-  font-size: 18px;
-  line-height: 21px;
+  margin-top: 46px;
+  height: 60px;
 }
 
 .field {
+  font-size: 18px;
+  line-height: 21px;
   border-radius: 10px 0px 0px 10px;
+  width:600px;
+  padding: 20px 0 19px 22px;
+  font-family: 'PT Sans';
 }
 
 .subscribe .button {
   font-size: 20px;
+  font-weight: 700;
   line-height: 36px;
   padding: 12px 15px;
   border-radius: 0px 10px 10px 0px;
+  width: 200px;
 }
 
-.footer-container {
+.main-footer {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
   justify-content: space-between;
   padding: 0 70px;
   align-items: center;
-  padding-bottom: 30px;
-  padding-top: 35px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  height: 50px;
 }
 
 .social-list {
-  width: 120px;
-  height: 20px;
   list-style: none;
   display: flex;
   align-items: center;
   padding: 0;
+  margin:0;
   justify-content: space-between;
+}
+
+.social-link {
+  display: block;
+  width: 47px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .phone-number {
