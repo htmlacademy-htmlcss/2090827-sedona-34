@@ -50,18 +50,6 @@ img {
   max-width: 100%;
 }
 
-h2 {
-  margin: 0;
-}
-
-h3 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -199,6 +187,7 @@ p {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin:0;
   margin-bottom: 30px;
 }
 
@@ -211,6 +200,7 @@ p {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin:0;
   margin-top: 30px;
 }
 
@@ -342,7 +332,7 @@ p {
   border-radius: 10px 0px 0px 10px;
   width: 600px;
   padding: 20px 0 19px 22px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   border: none;
   background-color: #F2F2F2;
 }
@@ -607,6 +597,7 @@ p {
 }
 
 .hotels-card-title {
+  margin:0;
   margin-top: 15px;
   font-weight: 700;
   font-size: 24px;
@@ -768,6 +759,7 @@ p {
 .rat {
   color: #333333;
   background-color: #F2F2F2;
+  margin:0;
 }
 
 .sub-bg {
@@ -1101,7 +1093,7 @@ p {
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
