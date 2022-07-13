@@ -231,27 +231,23 @@ img {
   background-image: url(/img/assets/house.svg);
   background-repeat: no-repeat;
   background-position: center 72px;
-  /*   padding: 182px 85px 80px; */
 }
 
 .exten-list .advantages-item:nth-child(2) {
   background-image: url(/img/assets/food.svg);
   background-repeat: no-repeat;
   background-position: center 72px;
-  /*   padding: 182px 85px 80px; */
 }
 
 .exten-list .advantages-item:nth-child(3) {
   background-image: url(/img/assets/gift.svg);
   background-repeat: no-repeat;
   background-position: center 72px;
-  /*   padding: 182px 85px 80px; */
 }
 
 .exten-list .advantages-item {
   width: 400px;
   min-height: 384px;
-  /*   padding: 80px 85px; */
   padding: 182px 85px 80px;
 }
 
@@ -292,7 +288,6 @@ img {
 
 .subscribe {
   width: 1200px;
-  /* min-height: 411px; */
   padding-top: 87px;
 }
 
@@ -480,10 +475,90 @@ img {
 
 .hotels-filter-group input[type="radio"] {
   transform: scale(1.5);
+
 }
 
 .hotels-filter-group input[type="checkbox"] {
   transform: scale(1.5);
+}
+
+.control {
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.control-input {
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  background: #FFFFFF;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin-left: -40px;
+}
+.control-input:hover + .checkbox {
+  opacity: 0.6;
+}
+
+.control-input:focus + .checkbox {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-input:active + .checkbox {
+  opacity: 0.3;
+}
+
+.control-input:disabled + .checkbox {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
+.control-input:checked + .checkbox {
+  background-image: url(../img/assets/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.radio {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-left: -40px;
+}
+
+.control-input:hover + .radio {
+  opacity: 0.6;
+}
+
+.control-input:focus + .radio {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-input:active + .radio {
+  opacity: 0.3;
+}
+
+.control-input:disabled + .radio {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
+.control-input:checked + .radio {
+  background-image: url(../img/assets/radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter-button {
@@ -534,13 +609,23 @@ img {
   background-repeat: no-repeat;
 }
 
+.button-view .selected {
+  border: 2px solid #000000;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .button-view .button:hover {
   border-color: #000;
 }
 
-.button-view .button:focus {
+.button-view .button:focus,.button-view .selected:focus {
   border-color: #68A2CA;
+  outline: none;
 }
+
+
 
 .view-table {
   background-image: url(/img/assets/icon-table.svg);
@@ -567,13 +652,40 @@ img {
 }
 
 .result-sort {
+  width: 290px;
+  height: 49px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
+  padding-left: 20px;
+  padding-right: 32px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url(../img/assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right 5%;
   margin-left: 190px;
   margin-right: auto;
-  padding: 14px 43px 14px 19px;
-  width: 290px;
+  background-color: #FFFFFF;
+}
+.result-sort:hover {
+  border: 2px solid #68A2CA;
+}
+
+.result-sort:focus {
+  outline: 0;
+  border: 2px solid #68A2CA;
+}
+
+.result-sort:active {
+  border: 2px solid #3F5E72;
+}
+
+.result-sort:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 .hotels-list {
@@ -1065,6 +1177,10 @@ img {
   margin: 0 0 63px 0;
   text-align: left;
   padding-right: 100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .modal svg {
@@ -1176,11 +1292,18 @@ img {
   padding: 0;
   text-align: center;
   border-radius: 4px;
-  -moz-appearance: textfield;
   background-color: #F2F2F2;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+  -moz-appearance: textfield;
+  
+}
+
+.field-age::-webkit-outer-spin-button,
+.field-age::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
 }
 
 .number-field-button {
@@ -1190,6 +1313,8 @@ img {
   width: 44px;
   height: 50px;
   padding: 0;
+
+  z-index: 1;
 }
 
 .tooltip {
@@ -1231,6 +1356,11 @@ img {
   border-radius: 10px;
   box-shadow: 0 15px 30px #0000004D;
   z-index: 2;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .logo-academy-link:hover,
