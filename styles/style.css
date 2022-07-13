@@ -187,7 +187,7 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin:0;
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -200,7 +200,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin:0;
+  margin: 0;
   margin-top: 30px;
 }
 
@@ -506,24 +506,25 @@ img {
   border-radius: 4px;
   margin-left: -40px;
 }
-.control-input:hover + .checkbox {
+
+.control-input:hover+.checkbox {
   opacity: 0.6;
 }
 
-.control-input:focus + .checkbox {
+.control-input:focus+.checkbox {
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
-.control-input:active + .checkbox {
+.control-input:active+.checkbox {
   opacity: 0.3;
 }
 
-.control-input:disabled + .checkbox {
+.control-input:disabled+.checkbox {
   opacity: 0.1;
   cursor: not-allowed;
 }
 
-.control-input:checked + .checkbox {
+.control-input:checked+.checkbox {
   background-image: url(../img/assets/checkbox.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -538,24 +539,24 @@ img {
   margin-left: -40px;
 }
 
-.control-input:hover + .radio {
+.control-input:hover+.radio {
   opacity: 0.6;
 }
 
-.control-input:focus + .radio {
+.control-input:focus+.radio {
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
-.control-input:active + .radio {
+.control-input:active+.radio {
   opacity: 0.3;
 }
 
-.control-input:disabled + .radio {
+.control-input:disabled+.radio {
   opacity: 0.1;
   cursor: not-allowed;
 }
 
-.control-input:checked + .radio {
+.control-input:checked+.radio {
   background-image: url(../img/assets/radio.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -620,7 +621,8 @@ img {
   border-color: #000;
 }
 
-.button-view .button:focus,.button-view .selected:focus {
+.button-view .button:focus,
+.button-view .selected:focus {
   border-color: #68A2CA;
   outline: none;
 }
@@ -670,6 +672,7 @@ img {
   margin-right: auto;
   background-color: #FFFFFF;
 }
+
 .result-sort:hover {
   border: 2px solid #68A2CA;
 }
@@ -709,7 +712,7 @@ img {
 }
 
 .hotels-card-title {
-  margin:0;
+  margin: 0;
   margin-top: 15px;
   font-weight: 700;
   font-size: 24px;
@@ -796,14 +799,20 @@ img {
   margin-right: 51px;
 }
 
-.hotels-select {
+.mini {
+  width: 160px;
+  padding: 14px 20px;
+  margin: 0;
+}
+
+/* .hotels-select {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   width: 160px;
   height: 48px;
-  padding: 14px 20px;
+
   font-size: 18px;
-}
+} */
 
 /*Modifications*/
 .current::before {
@@ -871,7 +880,7 @@ img {
 .rat {
   color: #333333;
   background-color: #F2F2F2;
-  margin:0;
+  margin: 0;
 }
 
 .sub-bg {
@@ -1135,9 +1144,9 @@ img {
   border-radius: 30px;
 }
 
-.modal-close {
+/* .modal-close {
   display: none;
-}
+} */
 
 .modal-search {
   width: 715px;
@@ -1183,10 +1192,6 @@ img {
   line-height: 36px;
 }
 
-.modal svg {
-  opacity: 0.3;
-}
-
 .dates-search-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -1198,6 +1203,7 @@ img {
 .search-label-fields {
   position: relative;
 }
+
 .search-label {
   font-size: 20px;
   font-weight: 700;
@@ -1247,8 +1253,9 @@ img {
 }
 
 .error {
-  color:red;
+  color: red;
 }
+
 .searsh-guests {
   display: flex;
   margin-bottom: 40px;
@@ -1297,24 +1304,62 @@ img {
   font-size: 18px;
   line-height: 21px;
   -moz-appearance: textfield;
-  
+  padding: 0 44px;
 }
 
 .field-age::-webkit-outer-spin-button,
 .field-age::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0; 
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.number-field-button {
-  background:transparent;
+.fields-age-button {
+  background: transparent;
   border: 0;
   border-radius: 4px;
   width: 44px;
   height: 50px;
   padding: 0;
-
   z-index: 1;
+}
+
+
+.fields-age-button:focus {
+  outline: none;
+}
+
+.fields-age-button:hover svg {
+  opacity: 1;
+}
+
+.fields-age-button:focus svg {
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+}
+
+.field-icon {
+  fill:#000000;
+  opacity: 0.3;
+}
+
+.number-field-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+}
+
+
+.button-less {
+  position: absolute;
+  z-index: 2;
+}
+
+.button-more {
+  position: absolute;
+  z-index: 2;
+  margin-left: 89px;
 }
 
 .tooltip {
@@ -1358,8 +1403,12 @@ img {
   z-index: 2;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-icon {
+  opacity: 1;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
   display: block;
 }
 
