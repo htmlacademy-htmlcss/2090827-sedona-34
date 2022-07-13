@@ -805,15 +805,6 @@ img {
   margin: 0;
 }
 
-/* .hotels-select {
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-  width: 160px;
-  height: 48px;
-
-  font-size: 18px;
-} */
-
 /*Modifications*/
 .current::before {
   position: absolute;
@@ -881,6 +872,7 @@ img {
   color: #333333;
   background-color: #F2F2F2;
   margin: 0;
+  font-weight: 400;
 }
 
 .sub-bg {
@@ -1144,9 +1136,9 @@ img {
   border-radius: 30px;
 }
 
-/* .modal-close {
+.modal-close {
   display: none;
-} */
+}
 
 .modal-search {
   width: 715px;
