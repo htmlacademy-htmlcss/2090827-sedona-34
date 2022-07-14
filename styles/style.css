@@ -54,20 +54,30 @@ img {
   flex-grow: 1;
 }
 
+.main-header {
+  display:flex;
+}
+
 .navigation {
   display: flex;
-  height: 65px;
   padding: 0 70px;
+  min-height: 65px;
+  margin-bottom: -10px;
+  width:1200px;
 }
 
 .navigation-list {
   padding: 0;
+  margin:0;
   margin-left: 30px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  width: 600px;
 }
 
 .navigation-user {
+  margin:0;
   margin-left: auto;
   display: flex;
   justify-content: end;
@@ -92,6 +102,8 @@ img {
 .navigation-item {
   list-style: none;
   position: relative;
+  min-height: 65px;
+  padding-top: 14px;
 }
 
 .navigation-user .navigation-item {
@@ -294,7 +306,7 @@ img {
 .suscribe-catalog {
   padding-top: 0;
   margin-bottom: 94px;
-  margin-top: 91px;
+  margin-top: 85px;
 }
 
 .subscribe-title {
@@ -755,7 +767,7 @@ img {
   padding: 0;
   color: #FFFFFF;
   margin-bottom: 30px;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .paggination-item {
@@ -806,9 +818,9 @@ img {
 }
 
 /*Modifications*/
-.current::before {
+.current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: 0px;
   right: 17px;
   left: 17px;
   content: "";
@@ -873,6 +885,7 @@ img {
   background-color: #F2F2F2;
   margin: 0;
   font-weight: 400;
+  padding: 11px 19px;
 }
 
 .sub-bg {
@@ -909,8 +922,8 @@ img {
   margin: 0;
   background-image: url(../img/assets/search.svg);
   position: absolute;
-  top: -8px;
   left: -90px;
+  margin-top: 4px;
 }
 
 .button-favorites {
@@ -918,8 +931,8 @@ img {
   margin: 0;
   background-image: url(../img/assets/favorite.svg);
   position: absolute;
-  top: -7px;
   left: -48px;
+  margin-top: 5px;
 }
 
 .navigation-link-favorite {
